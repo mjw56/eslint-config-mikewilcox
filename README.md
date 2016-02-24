@@ -39,3 +39,7 @@ $ eslint foo.js
   "lint": "eslint src"
 }
 ```
+
+# LICENSE
+
+MIT
