@@ -40,6 +40,6 @@ $ eslint foo.js
 }
 ```
 
-# LICENSE
+## LICENSE
 
 MIT
