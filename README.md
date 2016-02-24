@@ -25,3 +25,17 @@ $ touch .eslintrc
   "extends": "mikewilcox"   
 }
 ```
+
+You can then lint files using this extension by running eslint on the files you wish to:
+
+```bash
+$ eslint foo.js
+```
+
+...or to make it part of your project's build step, you can add a lint task to your npm scripts:
+
+```js
+"scripts": {
+  "lint": "eslint src"
+}
+```
