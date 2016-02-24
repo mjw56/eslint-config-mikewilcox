@@ -16,6 +16,9 @@ module.exports = {
         // Use 2 spaces as indentation
         "indent": [2, 2],
 
+        // Allow console logs
+        "no-console": 0,
+
         // Allow unused vars
         "no-unused-vars": 0
     }
