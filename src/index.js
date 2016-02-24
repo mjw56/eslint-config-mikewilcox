@@ -1,8 +1,8 @@
-import { recursive } from 'merge';
+var merge = require('merge').recursive;
 
 function resolveExtends(rule) {
     while (rule.extends.length > 0) {
-        const subRuleName = rule.extends.shift();
+        var subRuleName = rule.extends.shift();
 
         var subRule = require(subRuleName);
         var newRules = subRule.extends || [];
@@ -10,13 +10,13 @@ function resolveExtends(rule) {
         rule.extends = newRules.concat(rule.extends);
         delete subRule.extends;
 
-        recursive(rule, subRule);
+        merge(rule, subRule);
     }
 
     return rule;
 }
 
-export default resolveExtends({
+module.exports = resolveExtends({
     "extends": [
         "eslint-config-airbnb/base",
         "./rules"

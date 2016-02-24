@@ -1,4 +1,4 @@
-const rules = {
+module.exports = {
     "extends": [],
     "parser": require.resolve("babel-eslint"),
     "env": {
@@ -18,6 +18,4 @@ const rules = {
 
         "yoda": [2, "never"]
     }
-}
-
-export default rules;
+};
