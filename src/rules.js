@@ -10,12 +10,13 @@ module.exports = {
         "__VERSION__": false
     },
     "rules": {
-        // Use 2 spaces as indentation
-        "indent": [2, 2],
-
         // Ignore dangling commas
         "comma-dangle": [0, "never"],
 
-        "yoda": [2, "never"]
+        // Use 2 spaces as indentation
+        "indent": [2, 2],
+
+        // Allow unused vars
+        "no-unused-vars": 0
     }
 };
