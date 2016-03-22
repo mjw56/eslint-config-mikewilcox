@@ -1,6 +1,13 @@
 module.exports = {
     "extends": [],
     "parser": require.resolve("babel-eslint"),
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "generators": true
+        },
+    },
     "env": {
         // Enable all global mocha functions
         "mocha": true
@@ -20,6 +27,9 @@ module.exports = {
         "no-console": 0,
 
         // Allow unused vars
-        "no-unused-vars": 0
+        "no-unused-vars": 0,
+
+        // Support generators
+        "generator-star-spacing": [2, {"before": false, "after": true}]
     }
 };
