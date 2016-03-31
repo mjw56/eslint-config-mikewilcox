@@ -1,6 +1,5 @@
 module.exports = {
     "extends": [],
-    "parser": require.resolve("babel-eslint"),
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module",
